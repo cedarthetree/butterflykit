@@ -1,3 +1,28 @@
+body {
+  background: url("homebg.jpg");
+  background-size: cover;
+  background-attachment: sticky;
+}
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper section {
+  width: 100vw;
+}
+
+.wrapper {
+  height: 300vh;
+  width: 100vw;
+  position: absolute;
+  background: #ffffff;
+  opacity: 0%;
+  top: 0;
+  left: 0;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -13,10 +38,28 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 14px 16px;
+  padding-top: 14px;
+  padding-right: 950px;
+  padding-left: 20px;
   text-decoration: none;
+  font-family: monarcha, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
+}
+
+a.links {
+  padding: 35px 16px;
 }
 
 li a:hover {
-  background-color: #fff;
+  color: #ff9100;
 }
+
+img.stages {
+  overflow: visible;
+  position: sticky;
+  left: 260px;
+  top: 270px;
+}
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic.html -->
+    <title>butterfly grow kit</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vsr6xxv.css">
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+  	<header>
+  		<ul>
+  			<li><a href="#home" class="logo"><img src="logo.png" alt="butterfly logo"></a></li>
+  			<li><a class="links" href="#home">home</a></li>
+  			<li><a class="links" href="#about">about</a></li>
+ 			  <li><a class="links" href="#shop">shop</a></li>
+  			<li><a class="links" href="#demo">demo</a></li>
+		  </ul>
+  	</header>
+    <div>
+      <img class="stages" src="butterfly.png">
+    </div>
+    <div class="wrapper">
+      <section class="slide one">caterpillar</section>
+      <section class="slide two">cocoon</section>
+      <section class="slide three">butterfly</section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <script>
+      $(".two").waypoint(
+        function () {
+          $(".stages").attr("src", "caterpillar.png")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".three").waypoint(
+        function () {
+          $(".stages").attr("src", "cocoon.png")
+        },
+        { offset: "50%", horizontal: true }
+      )
+
+      $(".four").waypoint(
+        function () {
+          $(".stages").attr("src", "butterfly.png")
+        },
+        { offset: "50%", horizontal: true }
+      )
+    </script>
+  </body>
