@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- basic.html -->
+    <title>butterfly grow kit - demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vsr6xxv.css">
+    <script src="jquery-3.5.1.min.js"></script>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+  	<header>
+  		<ul>
+  			<li><a href="#home" class="logo"><img src="logo.png" alt="butterfly logo"></a></li>
+  			<li><a class="links" href="#home">home</a></li>
+  			<li><a class="links" href="#about">about</a></li>
+ 			  <li><a class="links" href="#shop">shop</a></li>
+  			<li><a class="links" href="#demo">demo</a></li>
+		  </ul>
+  	</header>
+  	<div class="demo">
+  		<img src="net1.png" alt="butterfly net" class="net1">
+  		<img src="egg-demo.png" alt="eggs" class="eggs">
+  		<img src="caterpillar-demo.png" alt="caterpillars" class="caterpillars">
+  		<img src="cocoon-demo.png" alt="cocoons" class="cocoons">
+  		<img src="butterfly-demo.png" alt="butterflies" class="butterflies">
+  		<button class="stage1"><img src="egg-button.png" alt="egg" class="egg-button"></button>
+  		<button class="stage2"><img src="caterpillar-button.png" alt="caterpillar" class="caterpillar-button"></button>
+  		<button class="stage3"><img src="cocoon-button.png" alt="cocoon" class="cocoon-button"></button>
+  		<button class="stage4"><img src="butterfly-button.png" alt="butterfly" class="butterfly-button"></button>
+  		<img src="net2.png" alt="butterfly net" class="net2">
+  	</div>
+
+<script>
+  	$('.stage1').click(function(){
+    $('.eggs').css("opacity","1");
+	});
+</script>

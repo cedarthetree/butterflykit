@@ -1,7 +1,36 @@
-body {
+body.home {
   background: url("homebg.jpg");
-  background-size: cover;
+  background-size: 100vw 190vh;
   background-attachment: sticky;
+  background-repeat: no-repeat;
+  top: -50px;
+}
+
+h2 {
+  font-family: monarcha, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24pt;
+}
+
+p {
+  font-family: monarcha, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14pt;
+  display: block;
+}
+
+div.text {
+  display: inline-block;
+  width: 30%;
+  margin-left: 60%;
+  position: absolute;
+}
+
+.egg {
+  margin-left: 0px;
+  float: left;
 }
 
 .slide {
@@ -9,25 +38,14 @@ body {
   height: 100vh;
 }
 
-.wrapper section {
+section {
   width: 100vw;
-}
-
-.wrapper {
-  height: 300vh;
-  width: 100vw;
-  position: absolute;
-  background: #ffffff;
-  opacity: 0%;
-  top: 0;
-  left: 0;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 li {
@@ -46,14 +64,22 @@ li a {
   font-weight: 400;
   font-style: normal;
   font-size: 14pt;
+  position: sticky;
 }
 
 a.links {
   padding: 35px 16px;
+  position: sticky;
 }
 
 li a:hover {
   color: #ff9100;
+}
+
+div.stages {
+  display: inline-block;
+  float: left;
+  width: 42%;
 }
 
 img.stages {
@@ -61,5 +87,78 @@ img.stages {
   position: sticky;
   left: 260px;
   top: 270px;
+  width: 100%;
+}
+
+/* demo page */
+
+.demo {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.net1 {
+  position: relative;
+  top: 105px;
+  left: 300px;
+}
+
+.net2 {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.butterflies {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+}
+
+.cocoons {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  opacity: 0%;
+}
+
+.caterpillars {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  opacity: 0%;
+}
+
+.eggs {
+  position: absolute;
+  top: 200px;
+  left: 300px;
+  opacity: 0%;
+}
+
+.butterfly-button {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  padding-bottom: 15px;
+}
+
+.cocoon-button {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+
+.caterpillar-button {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+}
+
+.egg-button {
+  position: absolute;
+  top: 200px;
+  left: 700px;
 }
 
