@@ -17,9 +17,12 @@
   			<li><a class="links" href="#demo">demo</a></li>
 		  </ul>
   	</header>
-    <div class="stages">
-      <img class="stages" src="egg.png">
-    </div>
+      <div class="bg">
+        <img src="homebg.jpg">
+      </div>
+      <div class="stage">
+        <img class="stages" src="egg.png">
+      </div>
     <section class="slide one">
       <div class="egg text">
         <h2>Egg</h2>
@@ -56,30 +59,39 @@
         <p>The caterpillar's job was to eat. The adult's job is to mate and lay eggs. Some species of adult butterflies get energy by feeding on nectar from flowers but many species don't feed at all.</p>
       </div>
     </section>
+    <section class="slide five">
+    </section>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/jquery.waypoints.min.js"></script>
 
     <script>
+      $(".one").waypoint(
+        function () {
+          $(".stages").attr("src", "egg.png")
+        },
+        { offset: "50%"}
+      )
+
       $(".two").waypoint(
         function () {
           $(".stages").attr("src", "caterpillar.png")
         },
-        { offset: "50%", horizontal: true }
+        { offset: "50%"}
       )
 
       $(".three").waypoint(
         function () {
           $(".stages").attr("src", "cocoon.png")
         },
-        { offset: "50%", horizontal: true }
+        { offset: "50%"}
       )
 
       $(".four").waypoint(
         function () {
           $(".stages").attr("src", "butterfly.png")
         },
-        { offset: "50%", horizontal: true }
+        { offset: "50%"}
       )
     </script>
   </body>

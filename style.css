@@ -1,10 +1,36 @@
-body.home {
-  background: url("homebg.jpg");
-  background-size: 100vw 190vh;
-  background-attachment: sticky;
-  background-repeat: no-repeat;
-  top: -50px;
+/* index/home */
+
+/* sticky positioning */
+
+.bg {
+position: sticky;
+top: -230px;
+left: 0;
+width: 100vw;
+overflow: hidden;
 }
+
+.bg img {
+  position: sticky;
+  width: 100%;
+  left: 0;
+}
+
+div.stage {
+  display: inline-block;
+  position: sticky;
+  top: 8vh;
+  left: 18vw;
+  float: left;
+  width: 42%;
+}
+
+img.stages {
+  overflow: visible;
+  width: 100%;
+}
+
+/* end of sticky positioning */
 
 h2 {
   font-family: monarcha, serif;
@@ -22,15 +48,9 @@ p {
 }
 
 div.text {
-  display: inline-block;
   width: 30%;
   margin-left: 60%;
   position: absolute;
-}
-
-.egg {
-  margin-left: 0px;
-  float: left;
 }
 
 .slide {
@@ -41,6 +61,53 @@ div.text {
 section {
   width: 100vw;
 }
+
+@media only screen and (max-width: 768px) {
+  .bg {
+    position: sticky;
+    top: -80px;
+    left: 0;
+    overflow: hidden;
+  }
+  div.bg {
+    height: 70vh;
+    width: 100vw;
+  }
+  .bg img {
+    position: sticky;
+    width: 100%;
+    object-fit: cover;
+  }
+  div.text {
+    z-index: -1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+  }
+  div.stage {
+    top: 10vh;
+    left: 18vw;
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  div.text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+  }
+  div.stage {
+    position: absolute;
+    top: 8vh;
+    left: 18vw;
+    width: 70%;
+  }
+}
+
+/* navbar*/
 
 ul {
   list-style-type: none;
@@ -76,19 +143,7 @@ li a:hover {
   color: #ff9100;
 }
 
-div.stages {
-  display: inline-block;
-  float: left;
-  width: 42%;
-}
-
-img.stages {
-  overflow: visible;
-  position: sticky;
-  left: 260px;
-  top: 270px;
-  width: 100%;
-}
+/* end of navbar */
 
 /* demo page */
 
