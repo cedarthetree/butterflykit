@@ -23,6 +23,7 @@ div.stage {
   left: 18vw;
   float: left;
   width: 42%;
+  margin-top: -300px;
 }
 
 img.stages {
@@ -113,6 +114,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  width: 100vw;
 }
 
 li {
@@ -124,24 +127,29 @@ li a {
   color: black;
   text-align: center;
   padding-top: 14px;
-  padding-right: 950px;
-  padding-left: 20px;
+  padding-right: 10vw;
+  padding-left: 10px;
   text-decoration: none;
   font-family: monarcha, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14pt;
-  position: sticky;
+  position: relative;
 }
 
 a.links {
   padding: 35px 16px;
-  position: sticky;
+  position: relative;
 }
 
 li a:hover {
   color: #ff9100;
 }
+
+.right {
+  float: right;
+}
+
 
 /* end of navbar */
 
@@ -149,71 +157,107 @@ li a:hover {
 
 .demo {
   position: relative;
-  top: 0;
+  top: 0vh;
   left: 0;
 }
 
 .net1 {
   position: relative;
-  top: 105px;
-  left: 300px;
+  top: 23vh;
+  left: 20vw;
 }
 
 .net2 {
   position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 23vh;
+  left: 20vw;
 }
 
 .butterflies {
   position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 22vh;
+  left: 20vw;
+  opacity: 0%;
 }
 
 .cocoons {
   position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 22vh;
+  left: 20vw;
   opacity: 0%;
 }
 
 .caterpillars {
   position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 22vh;
+  left: 20vw;
   opacity: 0%;
 }
 
 .eggs {
   position: absolute;
-  top: 200px;
-  left: 300px;
+  top: 22vh;
+  left: 20vw;
   opacity: 0%;
 }
 
 .butterfly-button {
   position: absolute;
-  top: 200px;
-  left: 700px;
-  padding-bottom: 15px;
+  top: 90vh;
+  left: 48vw;
+  padding-bottom: 10vh;
+}
+
+.butterfly-button:hover {
+  cursor: pointer;
 }
 
 .cocoon-button {
   position: absolute;
-  top: 200px;
-  left: 700px;
+  top: 70vh;
+  left: 48vw;
+}
+
+.cocoon-button:hover {
+  cursor: pointer;
 }
 
 .caterpillar-button {
   position: absolute;
-  top: 200px;
-  left: 700px;
+  top: 50vh;
+  left: 48vw;
+}
+
+.caterpillar-button:hover {
+  cursor: pointer;
 }
 
 .egg-button {
   position: absolute;
-  top: 200px;
-  left: 700px;
+  top: 30vh;
+  left: 48vw;
 }
 
+.egg-button:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .demo {
+  position: relative;
+  top: 0;
+  left: 0;
+  }
+
+.net1 {
+  position: relative;
+  top: 105px;
+  left: 20vw;
+  }
+
+.net2 {
+  position: absolute;
+  top: 200px; 
+  left: 20vw;
+  }
+}

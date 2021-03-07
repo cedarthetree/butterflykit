@@ -11,11 +11,11 @@
   <body>
   	<header>
   		<ul>
-  			<li><a href="#home" class="logo"><img src="logo.png" alt="butterfly logo"></a></li>
-  			<li><a class="links" href="#home">home</a></li>
-  			<li><a class="links" href="#about">about</a></li>
- 			  <li><a class="links" href="#shop">shop</a></li>
-  			<li><a class="links" href="#demo">demo</a></li>
+  			<li><a href="/home" class="logo"><img src="logo.png" alt="butterfly logo"></a></li>
+  			<li class="right"><a class="last links" href="/demo">demo</a></li>
+        <li class="right"><a class="links" href="/shop">shop</a></li>
+        <li class="right"><a class="links" href="/about">about</a></li>
+        <li class="right"><a class="links" href="/home">home</a></li>
 		  </ul>
   	</header>
   	<div class="demo">
@@ -24,15 +24,39 @@
   		<img src="caterpillar-demo.png" alt="caterpillars" class="caterpillars">
   		<img src="cocoon-demo.png" alt="cocoons" class="cocoons">
   		<img src="butterfly-demo.png" alt="butterflies" class="butterflies">
-  		<button class="stage1"><img src="egg-button.png" alt="egg" class="egg-button"></button>
-  		<button class="stage2"><img src="caterpillar-button.png" alt="caterpillar" class="caterpillar-button"></button>
-  		<button class="stage3"><img src="cocoon-button.png" alt="cocoon" class="cocoon-button"></button>
-  		<button class="stage4"><img src="butterfly-button.png" alt="butterfly" class="butterfly-button"></button>
+  		<img src="egg-button.png" alt="egg" class="stage1" class="egg-button">
+  		<img src="caterpillar-button.png" alt="caterpillar" class="stage2" class="caterpillar-button">
+      <img src="cocoon-button.png" alt="cocoon" class="stage3" class="cocoon-button">
+  		<img src="butterfly-button.png" alt="butterfly" class="stage4" class="butterfly-button">
   		<img src="net2.png" alt="butterfly net" class="net2">
   	</div>
 
 <script>
   	$('.stage1').click(function(){
-    $('.eggs').css("opacity","1");
-	});
+    $('.eggs').css("opacity","100");
+    $('.caterpillars').css("opacity","0");
+    $('.cocoons').css("opacity","0");
+    $('.butterflies').css("opacity","0");
+	  });
+
+    $('.stage2').click(function(){
+    $('.caterpillars').css("opacity","100");
+    $('.eggs').css("opacity","0");
+    $('.cocoons').css("opacity","0");
+    $('.butterflies').css("opacity","0");
+    });
+    
+    $('.stage3').click(function(){
+    $('.cocoons').css("opacity","100");
+    $('.eggs').css("opacity","0");
+    $('.caterpillars').css("opacity","0");
+    $('.butterflies').css("opacity","0");
+    });
+
+    $('.stage4').click(function(){
+    $('.butterflies').css("opacity","100");
+    $('.eggs').css("opacity","0");
+    $('.caterpillars').css("opacity","0");
+    $('.cocoons').css("opacity","0");
+    });
 </script>
