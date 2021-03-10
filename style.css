@@ -32,7 +32,6 @@ img.stages {
 }
 
 /* end of sticky positioning */
-
 h2 {
   font-family: monarcha, serif;
   font-weight: 700;
@@ -115,7 +114,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: 100vw;
 }
 
 li {
@@ -260,4 +258,52 @@ li a:hover {
   top: 200px; 
   left: 20vw;
   }
+}
+
+/* about */
+
+h1 {
+  font-family: monarcha, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36pt;
+}
+
+section.about {
+  width: 50vw;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
+body.about {
+  background-image: url('aboutbg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* end of about */
+
+/* shop */
+
+section.kit {
+  display: inline-block;
+  width: 30vw;
+}
+
+section.live {
+  display: inline-block;
+  width: 30vw;
+}
+
+img.kit {
+  width: 30vw;
+}
+
+img.live {
+  width: 30vw;
+}
+
+.purchase {
+  margin: auto;
 }
