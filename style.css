@@ -99,6 +99,7 @@ section {
     margin-right: auto;
     position: absolute;
   }
+
   div.stage {
     position: absolute;
     top: 8vh;
@@ -286,24 +287,71 @@ body.about {
 
 /* shop */
 
+h3 {
+  font-family: monarcha, serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16pt;
+}
+
+
+
 section.kit {
   display: inline-block;
   width: 30vw;
+  text-align: center;
+  margin-right: 5vw;
 }
 
 section.live {
   display: inline-block;
   width: 30vw;
+  text-align: center;
+  margin-left: 5vw;
 }
 
 img.kit {
   width: 30vw;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 img.live {
   width: 30vw;
+  margin-top: 150px;
+  margin-bottom: 50px;
 }
 
 .purchase {
+  width: 71vw;
   margin: auto;
+  margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+section.kit {
+  display: inline;
+  width: 70vw;
+  text-align: center;
+  margin-right: 0;
+}
+
+section.live {
+  display: inline;
+  width: 70vw;
+  text-align: center;
+  margin-left: 0;
+}
+
+img.kit {
+  width: 70vw;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+img.live {
+  width: 70vw;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
 }
