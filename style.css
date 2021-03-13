@@ -32,6 +32,7 @@ img.stages {
 }
 
 /* end of sticky positioning */
+
 h2 {
   font-family: monarcha, serif;
   font-weight: 700;
@@ -219,24 +220,12 @@ li a:hover {
   cursor: pointer;
 }
 
-.cocoon-button {
-
-}
-
 .cocoon-button:hover {
   cursor: pointer;
 }
 
-.caterpillar-button {
-
-}
-
 .caterpillar-button:hover {
   cursor: pointer;
-}
-
-.egg-button {
-
 }
 
 .egg-button:hover {
