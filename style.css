@@ -154,57 +154,65 @@ li a:hover {
 
 /* demo page */
 
+.demo-grid {
+  display: flex;
+  width: 55%;
+  margin: auto;
+  margin-top: 50px;
+}
+
 .demo {
   position: relative;
-  top: 0vh;
-  left: 0;
+  flex: 2;
+}
+
+.demo-buttons {
+  flex: 1;
+  margin-top: 30px;
 }
 
 .net1 {
-  position: relative;
-  top: 23vh;
-  left: 20vw;
+  position: absolute;
+  top: 1vh;
+  left: 0;
 }
 
 .net2 {
   position: absolute;
-  top: 23vh;
-  left: 20vw;
+  top: 1vh;
+  left: 0;
 }
 
 .butterflies {
   position: absolute;
-  top: 22vh;
-  left: 20vw;
+  top: 0;
+  left: 0;
   opacity: 0%;
 }
 
 .cocoons {
   position: absolute;
-  top: 22vh;
-  left: 20vw;
+  top: 0;
+  left: 0;
   opacity: 0%;
 }
 
 .caterpillars {
   position: absolute;
-  top: 22vh;
-  left: 20vw;
+  top: 0;
+  left: 0;
   opacity: 0%;
 }
 
 .eggs {
   position: absolute;
-  top: 22vh;
-  left: 20vw;
+  top: 0;
+  left: 0;
   opacity: 0%;
 }
 
 .butterfly-button {
-  position: absolute;
-  top: 90vh;
-  left: 48vw;
-  padding-bottom: 10vh;
+  padding-bottom: 0;
 }
 
 .butterfly-button:hover {
@@ -212,9 +220,7 @@ li a:hover {
 }
 
 .cocoon-button {
-  position: absolute;
-  top: 70vh;
-  left: 48vw;
+
 }
 
 .cocoon-button:hover {
@@ -222,9 +228,7 @@ li a:hover {
 }
 
 .caterpillar-button {
-  position: absolute;
-  top: 50vh;
-  left: 48vw;
+
 }
 
 .caterpillar-button:hover {
@@ -232,9 +236,7 @@ li a:hover {
 }
 
 .egg-button {
-  position: absolute;
-  top: 30vh;
-  left: 48vw;
+
 }
 
 .egg-button:hover {
@@ -242,23 +244,7 @@ li a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .demo {
-  position: relative;
-  top: 0;
-  left: 0;
-  }
 
-.net1 {
-  position: relative;
-  top: 105px;
-  left: 20vw;
-  }
-
-.net2 {
-  position: absolute;
-  top: 200px; 
-  left: 20vw;
-  }
 }
 
 /* about */

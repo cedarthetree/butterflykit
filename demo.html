@@ -18,44 +18,48 @@
         <li class="right"><a class="links" href="https://cedarthetree.github.io/butterflykit/">home</a></li>
 		  </ul>
   	</header>
+    <section class="demo-grid">
   	<div class="demo">
   		<img src="net1.png" alt="butterfly net" class="net1">
   		<img src="egg-demo.png" alt="eggs" class="eggs">
   		<img src="caterpillar-demo.png" alt="caterpillars" class="caterpillars">
   		<img src="cocoon-demo.png" alt="cocoons" class="cocoons">
   		<img src="butterfly-demo.png" alt="butterflies" class="butterflies">
-  		<img src="egg-button.png" alt="egg" class="stage1" class="egg-button">
-  		<img src="caterpillar-button.png" alt="caterpillar" class="stage2" class="caterpillar-button">
-      <img src="cocoon-button.png" alt="cocoon" class="stage3" class="cocoon-button">
-  		<img src="butterfly-button.png" alt="butterfly" class="stage4" class="butterfly-button">
   		<img src="net2.png" alt="butterfly net" class="net2">
   	</div>
+    <div class="demo-buttons">
+      <img src="egg-button.png" alt="egg" class="stage1" class="egg-button">
+      <img src="caterpillar-button.png" alt="caterpillar" class="stage2" class="caterpillar-button">
+      <img src="cocoon-button.png" alt="cocoon" class="stage3" class="cocoon-button">
+      <img src="butterfly-button.png" alt="butterfly" class="stage4" class="butterfly-button">
+    </div>
+  </section>
   </body>
 
 <script>
   	$('.stage1').click(function(){
-    $('.eggs').css("opacity","100");
+    $('.eggs').css("opacity","1");
     $('.caterpillars').css("opacity","0");
     $('.cocoons').css("opacity","0");
     $('.butterflies').css("opacity","0");
 	  });
 
     $('.stage2').click(function(){
-    $('.caterpillars').css("opacity","100");
+    $('.caterpillars').css("opacity","1");
     $('.eggs').css("opacity","0");
     $('.cocoons').css("opacity","0");
     $('.butterflies').css("opacity","0");
     });
     
     $('.stage3').click(function(){
-    $('.cocoons').css("opacity","100");
+    $('.cocoons').css("opacity","1");
     $('.eggs').css("opacity","0");
     $('.caterpillars').css("opacity","0");
     $('.butterflies').css("opacity","0");
     });
 
     $('.stage4').click(function(){
-    $('.butterflies').css("opacity","100");
+    $('.butterflies').css("opacity","1");
     $('.eggs').css("opacity","0");
     $('.caterpillars').css("opacity","0");
     $('.cocoons').css("opacity","0");
